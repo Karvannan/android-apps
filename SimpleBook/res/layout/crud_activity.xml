@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CRUDActivity" >
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_create" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_update" />
+    
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_delete" />
+
+    <Button
+        android:id="@+id/btn_retrieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_retrieve" />
+
+    <Button
+        android:id="@+id/btn_retrieveAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_retrieveAll" />   
+
+    <TextView
+        android:id="@+id/current_action_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/list_customer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" >
+    </ListView>
+
+</LinearLayout>
