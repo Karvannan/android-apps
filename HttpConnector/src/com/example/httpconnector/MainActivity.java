@@ -34,16 +34,19 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		final TextView httpURL = (TextView) findViewById(R.id.httpURL);
+		
 		final Button btn_invoke = (Button) findViewById(R.id.btn_invoke);
 		final TextView httpResponse = (TextView) findViewById(R.id.httpResponse);
-		final String URL = httpURL.getText().toString();
+		
 
 		btn_invoke.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				try {
+					final TextView httpURL = (TextView) findViewById(R.id.httpURL);
+					final String URL = httpURL.getText().toString();
+					
 					String response = RestUtils.getInstance().GET(URL);
 					Toast.makeText(getBaseContext(), response,
 							Toast.LENGTH_LONG).show();
